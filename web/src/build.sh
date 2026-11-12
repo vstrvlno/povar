@@ -5,7 +5,7 @@ cd "$(dirname "$0")"
 body() {
   cat head.html
   printf '<style>\n'; cat style.css; printf '</style>\n'
-  printf '<div id="root"></div>\n<script>\n'; cat data.js; printf '\n'; cat app.js; printf '</script>\n'
+  printf '<div id="root"></div>\n<script>\n'; cat data.js; printf '\n'; cat search.js; printf '\n'; cat app.js; printf '</script>\n'
 }
 {
   printf '<!doctype html>\n<html lang="ru">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n'
